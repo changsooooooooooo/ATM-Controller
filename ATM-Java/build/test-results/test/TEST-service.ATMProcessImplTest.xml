@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="service.ATMProcessImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-09T05:35:11" hostname="ichangsuui-MacBookPro.local" time="0.015">
-  <properties/>
-  <testcase name="Show Balance Test" classname="service.ATMProcessImplTest" time="0.015"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
