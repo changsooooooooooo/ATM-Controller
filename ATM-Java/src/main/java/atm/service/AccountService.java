@@ -7,6 +7,7 @@ import atm.data.entity.Card;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.Optional;
 
 @Service
@@ -19,6 +20,7 @@ public class AccountService {
         return accountRepository.findAccountByAccountBankAndCard(accountBank, card);
     }
 
+    @Transactional
     public Account updateBalance(AccountBank accountBank, Card card, Long money) throws Exception {
         Account account = accountRepository.findAccountByAccountBankAndCard(accountBank, card)
                 .orElseThrow(()->new NoMatchingAccount("No Matching Account For RequestBody"));

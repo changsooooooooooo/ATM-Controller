@@ -29,7 +29,7 @@ public class Account {
     private Long balance;
 
     public void updateBalance (Long money) throws Exception {
-        if(money<0 && balance < money) {
+        if(money<0 && balance + money < 0) {
             throw new BalanceIsLittleThanMoney("Cannot Withdraw Money");
         }
         balance += money;

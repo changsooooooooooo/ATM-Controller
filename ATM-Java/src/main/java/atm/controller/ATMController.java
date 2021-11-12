@@ -22,7 +22,7 @@ public class ATMController {
     private final CardService cardService;
     private final AccountService accountService;
 
-    @PostMapping("")
+    @PostMapping("/show")
     public ResponseEntity<ApiFormat> getAccount(
             @RequestParam String id,
             @RequestBody @Validated PostRequestBody postRequestBody
@@ -46,7 +46,7 @@ public class ATMController {
         );
     }
 
-    @PostMapping("")
+    @PostMapping("/deposit")
     public ResponseEntity<ApiFormat> doDeposit(
             @RequestParam String id,
             @RequestBody @Validated PostRequestBody postRequestBody
@@ -72,7 +72,7 @@ public class ATMController {
         );
     }
 
-    @PostMapping("")
+    @PostMapping("/withdraw")
     public ResponseEntity<ApiFormat> doWithdraw(
             @RequestParam String id,
             @RequestBody @Validated PostRequestBody postRequestBody
