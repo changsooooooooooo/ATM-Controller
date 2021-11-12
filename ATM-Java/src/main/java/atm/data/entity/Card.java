@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -17,9 +18,11 @@ public class Card {
     @Column(name = "id")
     private Long id;
 
+    @NotNull
     @Column(name = "card_id")
     private String cardId;
 
+    @NotNull
     @Column(name = "pin_number")
     private Long pinNumber;
 

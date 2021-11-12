@@ -9,15 +9,12 @@ import atm.data.entity.Card;
 import atm.service.AccountService;
 import atm.service.CardService;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.log4j.Log4j2;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
-import javax.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
-@Log4j2
-@Validated
+import javax.validation.Valid;
+
 @RestController
 @RequestMapping("/api")
 @RequiredArgsConstructor
@@ -31,8 +28,6 @@ public class ATMController {
             @RequestParam String id,
             @Valid @RequestBody PostRequestBody postRequestBody
             ) throws Exception {
-
-        log.info("request body : {}", postRequestBody.getAccountBank());
 
         Card card = cardService.isCorrectPinNumber(id, postRequestBody.getPinNumber())
                 .orElseThrow(()->new NotCorrectPW("Not Correct PassWord"));
@@ -64,7 +59,6 @@ public class ATMController {
         Account account = accountService.updateBalance(postRequestBody.getAccountBank(),
                 card,
                 postRequestBody.getMoney());
-
 
         ApiFormat.Response res = ApiFormat.Response.builder()
                 .cardId(id)
