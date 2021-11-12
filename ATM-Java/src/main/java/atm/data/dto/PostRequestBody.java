@@ -1,20 +1,22 @@
 package atm.data.dto;
 
 import atm.data.entity.AccountBank;
-import com.sun.istack.NotNull;
-import com.sun.istack.Nullable;
 import lombok.Getter;
+
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
 @Getter
 public class PostRequestBody {
 
-    @NotNull
+    @NotEmpty
+    @Size(min = 1)
     private Long pinNumber;
 
-    @NotNull
+    @NotEmpty
+    @Size(min = 1)
     private AccountBank accountBank;
 
-    @Nullable
     private Long money;
 
     public PostRequestBody () {
