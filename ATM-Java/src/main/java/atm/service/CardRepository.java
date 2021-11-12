@@ -1,6 +1,6 @@
 package atm.service;
 
-import atm.entity.Card;
+import atm.data.entity.Card;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

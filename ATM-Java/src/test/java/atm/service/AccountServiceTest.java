@@ -1,7 +1,7 @@
 package atm.service;
 
-import atm.entity.Account;
-import atm.entity.AccountBank;
+import atm.data.entity.Account;
+import atm.data.entity.AccountBank;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

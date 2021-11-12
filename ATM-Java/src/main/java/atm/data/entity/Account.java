@@ -1,6 +1,6 @@
-package atm.entity;
+package atm.data.entity;
 
-import lombok.Builder;
+import atm.Exception.BalanceIsLittleThanMoney;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
@@ -9,7 +9,7 @@ import javax.persistence.*;
 
 @Entity
 @Getter
-@ToString
+@ToString(exclude = {"card"})
 @NoArgsConstructor
 public class Account {
 
@@ -28,7 +28,10 @@ public class Account {
     @Column(name="balance")
     private Long balance;
 
-    public void updateBalance (Long money) {
+    public void updateBalance (Long money) throws Exception {
+        if(money<0 && balance < money) {
+            throw new BalanceIsLittleThanMoney("Cannot Withdraw Money");
+        }
         balance += money;
         card.updateAccount(this);
     }

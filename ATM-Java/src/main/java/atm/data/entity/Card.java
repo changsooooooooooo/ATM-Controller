@@ -1,4 +1,4 @@
-package atm.entity;
+package atm.data.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

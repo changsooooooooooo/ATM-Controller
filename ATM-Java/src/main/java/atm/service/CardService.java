@@ -1,16 +1,18 @@
 package atm.service;
 
-import atm.entity.Card;
+import atm.data.entity.Card;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class CardService {
 
-    private CardRepository cardRepository;
+    private final CardRepository cardRepository;
 
-    public Optional<Card> isCorrectPinNumber(String cardId, long pinNumber) {
+    public Optional<Card> isCorrectPinNumber(String cardId, Long pinNumber) {
         return cardRepository.findCardByCardIdAndPinNumber(cardId, pinNumber);
     }
 }
