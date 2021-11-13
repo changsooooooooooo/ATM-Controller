@@ -14,6 +14,7 @@
 <H3>How To Build Application</H3>
 
 <H3>How To Use Controller</H3>
+
 - All controllers I've coded is `@PostMapping`
   
   - So, if you want to test controller method, you also need to send `@RequestBody(Formed data.dto.PostRequestBody)`  which is satisfied the constraints defined on class member variable
@@ -43,6 +44,7 @@
 - If you run above command then you can test each test method by method name I coded
 
 <H3>Check Data on Console</H3>
+
 - You can see real data on database schema by connecting to bottom address
 
 > http://localhost:8080/h2-console
@@ -50,9 +52,11 @@
 - And you need to type username which was defined in `resources/application.yml`
 
 <H3>In Memory DB Data</H3>
+
 - If you want to know initialize data of H2 Database, then open `resources/import.sql`
 
 - But, you can't do insert or delete initialize data of H2 Database
 
 <H3>Careful Things</H3>
-- All addresses those prefixed `http://localhost` can be accessed after run `SpringBoot Application`
+
+- All addresses those prefixed as `http://localhost` can be accessed after run `SpringBoot Application`
