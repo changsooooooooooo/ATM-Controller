@@ -6,12 +6,16 @@
 - Spring Boot `2.5.5`
 - Gradle `7.1.1`
 - JPA `2.5.6`
-- H2 in memory DB
+- H2 in memory DB(Embedded)
 - lombok
 - springboot-starter-validation
 - springboot-starter-jdbc
 
 <H3>How To Build Application</H3>
+
+<pre><code>gradle build</code></pre>
+
+- By using above command then you can build <code>jar</code>
 
 <H3>How To Use Controller</H3>
 
