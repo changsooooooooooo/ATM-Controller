@@ -26,6 +26,7 @@
 <pre><code>bash atm-daemon.sh</code></pre>
 
 - You can use bash shell script for executing jar on daemon environment and for building jar file
+- You can also check the pid of <code>jar</code> by using above command
 
 <H3>How To Use Controller</H3>
 
