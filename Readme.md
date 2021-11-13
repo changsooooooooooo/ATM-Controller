@@ -36,7 +36,7 @@
 
 - All controllers I've coded is `@PostMapping`
   
-  - So, if you want to test controller method, you also need to send `@RequestBody(Formed data.dto.PostRequestBody)`  which is satisfied the constraints defined on class member variable
+  - So, if you want to test controller method, you also need to send `@RequestBody(Formed data.dto.PostRequestBody)`  need to satisfy the constraints defined on class member variable
   
   - And, also you need to send `@RequestParm` which is single String of `card_id(one of column defined on data.dto.entity.card)`
 
