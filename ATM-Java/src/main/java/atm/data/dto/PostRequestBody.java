@@ -2,16 +2,16 @@ package atm.data.dto;
 
 import atm.data.entity.AccountBank;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 @Getter
+@Builder
+@AllArgsConstructor
 public class PostRequestBody {
 
     @NotNull
