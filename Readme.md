@@ -17,6 +17,16 @@
 
 - By using above command then you can build <code>jar</code>
 
+- Check jar file located on <code>./build/libs/</code>
+
+<pre><code>java -jar ATM-bear-robotics.jar</code></pre>
+
+- You can run jar file by using above command
+
+<pre><code>bash atm-daemon.sh</code></pre>
+
+- You can use bash shell script for executing jar on daemon environment and for building jar file
+
 <H3>How To Use Controller</H3>
 
 - All controllers I've coded is `@PostMapping`
