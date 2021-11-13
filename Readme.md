@@ -15,9 +15,10 @@
 
 <H3>How To Use Controller</H3>
 - All controllers I've coded is `@PostMapping`
+  
   - So, if you want to test controller method, you also need to send `@RequestBody(Formed data.dto.PostRequestBody)`  which is satisfied the constraints defined on class member variable
-  - And, also you need to send `@RequestParm` 
-  which is single String of `card_id(one of column defined on data.dto.entity.card)`
+  
+  - And, also you need to send `@RequestParm` which is single String of `card_id(one of column defined on data.dto.entity.card)`
 
 > Controller's Http Address(Request just Show address)
 > 
@@ -50,6 +51,7 @@
 
 <H3>In Memory DB Data</H3>
 - If you want to know initialize data of H2 Database, then open `resources/import.sql`
+
 - But, you can't do insert or delete initialize data of H2 Database
 
 <H3>Careful Things</H3>
