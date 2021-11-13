@@ -32,8 +32,8 @@
 
     gradle test -Dtest=ATMControllerTest
 
-- If you run above command then you can test all of tests method I coded 
-
+- If you run above command then you can test all of tests method I coded
+  
   
     gradle test -Dtest=ATMControllerTest#<method-name>
 
