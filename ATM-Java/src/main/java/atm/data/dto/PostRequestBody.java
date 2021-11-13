@@ -5,12 +5,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 @Getter
 @Builder
+@NoArgsConstructor
 @AllArgsConstructor
 public class PostRequestBody {
 
@@ -26,7 +28,4 @@ public class PostRequestBody {
     @Min(value = 0)
     private Long money;
 
-    public PostRequestBody () {
-
-    }
 }
