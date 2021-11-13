@@ -14,9 +14,11 @@
 <H3>How To Build Application</H3>
 
 <H3>How To Use Controller</H3>
-- All controllers I've coded is `@PostMapping`
-  - So, if you want to test controller method, you also need to send `@RequestBody(Formed data.dto.PostRequestBody)` which is satisfied the constraints defined on class member variable
-  - And, also you need to send `@RequestParm` which is single String of `card_id(one of column defined on data.dto.entity.card)`
+- All controllers I've coded is   `@PostMapping`
+  - So, if you want to test controller method, you also need to send  
+  `@RequestBody(Formed data.dto.PostRequestBody)`  which is satisfied the constraints defined on class member variable
+  - And, also you need to send   `@RequestParm` 
+  which is single String of  `card_id(one of column defined on data.dto.entity.card)`
 > Controller's Http Address(Request just Show address)
 > 
 > 
@@ -51,4 +53,6 @@
 - But, you can't do insert or delete initialize data of H2 Database
 
 <H3>Careful Things</H3>
-- All addresses those prefixed `http://localhost` can be accessed after run `SpringBoot Application`
+- All addresses those prefixed `http://localhost` 
+can be accessed after run 
+`SpringBoot Application`
