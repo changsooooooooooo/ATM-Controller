@@ -72,9 +72,9 @@
 
 <H3>In Memory DB Data</H3>
 
-- If you want to know initialize data of H2 Database, then open `resources/import.sql`
+- If you want to know initial data of H2 Database, then open `resources/import.sql`
 
-- But, you can't do insert or delete initialize data of H2 Database
+- But, you can't do insert or delete initial data of H2 Database
 
 <H3>Careful Things</H3>
 
